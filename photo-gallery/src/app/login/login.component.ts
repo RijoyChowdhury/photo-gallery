@@ -15,6 +15,8 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) { }
   // sign in function
 
+  // Debv branch identifier
+
   signIn() {
     this.authService.login({email: this.email, password: this.password})
     .then(resolve => this.router.navigate(['gallery']))
