@@ -13,6 +13,7 @@ export class LoginComponent {
   errorMsg: string;
 
   constructor(private authService: AuthService, private router: Router) { }
+  // sign in function
 
   signIn() {
     this.authService.login({email: this.email, password: this.password})
